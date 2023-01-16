@@ -1,0 +1,287 @@
+﻿@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+/* font */
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: #86C8BC;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 500px;
+    border-radius: 6%;
+}
+
+
+/* -------------------------index.html------------------------------ */
+
+/*navigation bar */
+
+li,a, button {
+    font: 30px 'Roboto-black', sans-serif;
+    font-weight: 900;
+}
+
+header {
+    margin: 0rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #FFD4B2;
+    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.69);
+    border-radius: 2%;
+}
+
+.logo {
+    width: 15%;
+    cursor: pointer;
+    transform: translateX(-45%);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.4s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: orange;
+}
+
+button {
+    padding: 15px;
+    color: wheat;
+    background-color: darkblue;
+    border-radius: 25px 35px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(69, 69, 205);
+}
+
+/* rowdivs */
+
+#all-gears {
+    margin: 100px 300px;
+}
+
+.fst-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0 30px;
+}
+
+.snd-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px;
+}
+
+.final-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px;
+}
+
+a.gear-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+}
+
+a:hover {
+    opacity: 80%;
+    transition: 0.8s ease 0s;
+    transform: scale(1.1);
+}
+
+.home-page:hover {
+    box-shadow: 1px 1px 11px 3px rgba(255,0,0,1);
+    transition: 0.8s ease 0s;
+}
+
+@media only screen and (max-width: 1600px) {
+    #all-gears {
+        margin: 100px 100px;
+    }
+    img {
+        width: 50%;
+    }
+
+  }
+
+/* -------------------------gear2.html------------------------------ */
+
+#gear2-page {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 250px;
+    background-color: #FFF6BD;
+    padding: 50px;
+    border-radius: 3% 15%;
+}
+
+/* top-nav-bar */
+
+.gear2-nav-bar {
+
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+div#gear2nav nav.gear2-nav-bar ul.nav-links {
+    padding: 0;
+}
+
+/* sidebar */
+
+.top-image-gear2 {
+    right: 20rem;
+    top: 3.2rem;
+    position: absolute;
+    width: 90px;
+}
+
+.sidebar-text:hover {
+    color: rgb(91, 91, 91);
+    transition: none;
+}
+
+.sidebar {
+    padding-right: 30px;
+    border: none;
+    border-right: 3px solid rgb(182, 182, 182);
+    border-radius: 20% 20%;
+}
+
+div .sidebar h1 {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+ul {
+    padding-top: 10px;
+}
+
+a.sidebar-text {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* content */
+
+p {
+    font-size: 20px;
+}
+
+.main-page {
+    padding: 0px 0px 0px 30px;
+}
+
+div.main-page h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+div.main-page h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    padding-bottom: 15px;
+}
+
+div.transformation-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+div.transformation-img figure img {
+    /* text-align: center; */
+    /* display: flex; */
+    width: 40%;
+    border: 2px solid;
+}
+
+/* figure */
+
+div figure.trans-figur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thumbl {
+    clear: left;
+    width: 20%;
+    float: left;
+    padding-right: 20px;
+}
+
+.thumbr {
+    clear: right;
+    width: 20%;
+    float: right;
+    padding-left: 20px;
+}
+
+.thumbcap {
+    font-size: smaller;
+}
+
+.thumbcap2 {
+    padding: 0 160px;
+    text-align: center;
+    font-size: smaller;
+}
+
+figure img {
+    width: 1000px;
+}
+
+/* 404 page */
+
+div#pagenotfound404 h1 {
+    font-size: 500px;
+    opacity: 45%;
+}
+
+div#pagenotfound404 a {
+    text-decoration: underline;
+    color: blue;
+    font-size: 15px;
+}
+
+div#pagenotfound404 {
+    transform: translateY(25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
